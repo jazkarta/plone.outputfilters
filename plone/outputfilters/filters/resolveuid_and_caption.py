@@ -155,7 +155,8 @@ class ResolveUIDAndCaptionFilter(object):
                 title = safe_unicode(aq_acquire(fullimage, 'Title')())
                 if not attributes.get('alt'):
                     # XXX alt attribute contains *alternate* text
-                    attributes['alt'] = description or title
+                    # attributes['alt'] = description or title
+                    pass
                 if 'title' not in attributes:
                     attributes['title'] = title
 
